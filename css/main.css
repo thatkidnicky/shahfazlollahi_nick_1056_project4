@@ -1,0 +1,67 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.coloumn3, .coloumn4
+{
+  display: none;
+}
+
+.coloumn
+{
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
+
+.coloumn1
+{
+  background-color: pink;
+}
+.coloumn2
+{
+  background-color: red;
+}
+
+@media screen and (min-width: 641px) {
+
+  .coloumn3, .coloumn4 {
+    display: block;
+  }
+  .container
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+   .coloumn
+  {
+    flex: 0 1 1140px;
+  }
+
+  .coloumn1
+  {
+    background-color: blue;
+  }
+
+  .coloumn2
+  {
+    background-color: purple;
+  }
+
+  .coloumn3
+  {
+    background-color: gray;
+  }
+  .coloumn4
+  {
+    background-color: brown;
+  }
+
+}
+
